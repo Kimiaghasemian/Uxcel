@@ -1,0 +1,323 @@
+@import "reset.css";
+
+@mixin btn-primary {
+  background-color: #5627ff;
+  color: #ffff;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@mixin btn-secondary {
+  background-color: rgba(5, 6, 15, 0.04);
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgb(212, 207, 207);
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    .logo {
+      margin-top: 15px;
+      img {
+        width: 120px;
+      }
+    }
+    .empty {
+      width: 250px;
+    }
+    nav {
+      margin-top: 30px;
+      display: flex;
+      .dropdown {
+        ul {
+          :hover {
+            cursor: pointer;
+            color: rgb(68, 46, 190);
+          }
+          display: flex;
+          li {
+            margin-left: 30px;
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+      .links {
+        ul {
+          display: flex;
+          li {
+            a {
+              text-decoration: none;
+              color: black;
+              margin-left: 40px;
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+    .btn {
+      margin-left: 30px;
+      margin-top: 20px;
+      display: flex;
+      .btn-primary {
+        button {
+          @include btn-primary;
+          &:hover {
+            background-color: #5627ffd0;
+          }
+        }
+      }
+      .btn-secondary {
+        button {
+          @include btn-secondary;
+          margin-right: 20px;
+          width: 100px;
+          &:hover {
+            background-color: rgba(197, 194, 194, 0.397);
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    .banner {
+      display: flex;
+      .leftside {
+        margin-top: 50px;
+        h1 {
+          font-size: 64px;
+          line-height: 1.125;
+          font-weight: 700;
+        }
+        p {
+          margin-top: 20px;
+          line-height: 32px;
+          font-size: 20px;
+          color: rgb(85, 82, 82);
+        }
+        .btn-banner {
+          margin: 20px 0px;
+          display: flex;
+          .btn1 {
+            button {
+              width: 300px;
+              font-size: 20px;
+              background-color: #5627ff;
+              color: #ffff;
+              border: none;
+              padding: 15px;
+              border-radius: 15px;
+              font-weight: 700;
+              cursor: pointer;
+              &:hover {
+                background-color: #5627ffd0;
+              }
+            }
+          }
+        }
+        .btn2 {
+          margin-left: 20px;
+          button {
+            width: 200px;
+            font-size: 20px;
+            background-color: rgba(5, 6, 15, 0.04);
+            border: none;
+            padding: 15px;
+            border-radius: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover {
+              background-color: rgba(197, 194, 194, 0.397);
+            }
+          }
+          // natunestam az mixin bala estefade konam baraye btn-primary va btn-secondary nemidunam dalilesh chie *********************************************************
+        }
+        span {
+          color: rgb(139, 135, 135);
+          margin-top: 20px;
+        }
+      }
+    }
+    .rank {
+      margin-top: 30px;
+      display: flex;
+      .socialmedia {
+        width: 700px;
+        height: 150px;
+        border-right: 1px solid rgb(168, 164, 164);
+      }
+      .rate {
+        height: 120px;
+        border-right: 1px solid rgb(168, 164, 164);
+        padding: 20px 20px 20px;
+        font-size: large;
+        .checked {
+          color: orange;
+        }
+        .des {
+          color: rgb(139, 135, 135);
+          margin-top: 10px;
+        }
+      }
+      .trustpilot {
+        padding-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 150px;
+
+        a {
+          color: black;
+          text-decoration: none;
+          .image {
+            img {
+              margin-bottom: 5px;
+              margin-left: 20px;
+              width: 150px;
+            }
+          }
+          img {
+            margin-left: 20px;
+            width: 200px;
+          }
+        }
+        p {
+          margin-top: 5px;
+          margin-left: 20px;
+          b {
+            font-weight: bold;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  .graybanner {
+    display: flex;
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 600px;
+    .leftimage {
+      position: relative;
+      border: 5px solid black;
+      border-radius: 15px;
+      width: 700px;
+      height: 400px;
+      top: 60px;
+      left: 60px;
+      h1 {
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 65px;
+        padding-top: 30px;
+      }
+      .colorfull {
+        display: flex;
+        margin-top: 25px;
+        margin-left: 35px;
+        img {
+          border-radius: 15px;
+          margin-left: 15px;
+          &:hover {
+            scale: 1.01;
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition: 1s;
+          }
+        }
+      }
+    }
+    .right {
+      margin: 60px;
+      padding-left: 60px;
+      span {
+        font-size: 2rem;
+        color: rgb(139, 135, 135);
+        font-family: "Nanum Pen Script", sans-serif;
+        line-height: 1.25;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 15px 0px;
+      }
+      p {
+        line-height: 30px;
+        font-size: 20px;
+        color: rgb(139, 135, 135);
+      }
+      button {
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 15px 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        &:hover {
+          background-color: black;
+          cursor: pointer;
+          color: #ffff;
+        }
+      }
+    }
+  }
+  .test {
+    margin-top: 80px;
+    .container {
+      display: flex;
+
+      .testleft {
+        margin-top: 30px;
+        width: 600px;
+        span {
+          font-size: 2rem;
+          color: rgb(139, 135, 135);
+          font-family: "Nanum Pen Script", sans-serif;
+          line-height: 1.25;
+          font-weight: 400;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+        h1 {
+          font-size: 50px;
+          font-weight: 700;
+          margin: 15px 0px;
+        }
+        p {
+          line-height: 30px;
+          font-size: 20px;
+          color: rgb(139, 135, 135);
+        }
+        button {
+          font-weight: bold;
+          background-color: transparent;
+          margin-top: 20px;
+          padding: 15px 20px;
+          border: 2px solid black;
+          border-radius: 10px;
+          &:hover {
+            background-color: black;
+            cursor: pointer;
+            color: #ffff;
+          }
+        }
+      }
+    }
+  }
+}

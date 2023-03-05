@@ -1,0 +1,298 @@
+@import "reset.css";
+header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid rgb(212, 207, 207);
+}
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+header .container .logo {
+  margin-top: 15px;
+}
+header .container .logo img {
+  width: 120px;
+}
+header .container .empty {
+  width: 250px;
+}
+header .container nav {
+  margin-top: 30px;
+  display: flex;
+}
+header .container nav .dropdown ul {
+  display: flex;
+}
+header .container nav .dropdown ul :hover {
+  cursor: pointer;
+  color: rgb(68, 46, 190);
+}
+header .container nav .dropdown ul li {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+header .container nav .links ul {
+  display: flex;
+}
+header .container nav .links ul li a {
+  text-decoration: none;
+  color: black;
+  margin-left: 40px;
+  font-size: 16px;
+  font-weight: 700;
+}
+header .container .btn {
+  margin-left: 30px;
+  margin-top: 20px;
+  display: flex;
+}
+header .container .btn .btn-primary button {
+  background-color: #5627ff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+header .container .btn .btn-primary button:hover {
+  background-color: rgba(86, 39, 255, 0.8156862745);
+}
+header .container .btn .btn-secondary button {
+  background-color: rgba(5, 6, 15, 0.04);
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 20px;
+  width: 100px;
+}
+header .container .btn .btn-secondary button:hover {
+  background-color: rgba(197, 194, 194, 0.397);
+}
+
+main .container {
+  margin: 0 auto;
+  width: 90%;
+}
+main .container .banner {
+  display: flex;
+}
+main .container .banner .leftside {
+  margin-top: 50px;
+}
+main .container .banner .leftside h1 {
+  font-size: 64px;
+  line-height: 1.125;
+  font-weight: 700;
+}
+main .container .banner .leftside p {
+  margin-top: 20px;
+  line-height: 32px;
+  font-size: 20px;
+  color: rgb(85, 82, 82);
+}
+main .container .banner .leftside .btn-banner {
+  margin: 20px 0px;
+  display: flex;
+}
+main .container .banner .leftside .btn-banner .btn1 button {
+  width: 300px;
+  font-size: 20px;
+  background-color: #5627ff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+main .container .banner .leftside .btn-banner .btn1 button:hover {
+  background-color: rgba(86, 39, 255, 0.8156862745);
+}
+main .container .banner .leftside .btn2 {
+  margin-left: 20px;
+}
+main .container .banner .leftside .btn2 button {
+  width: 200px;
+  font-size: 20px;
+  background-color: rgba(5, 6, 15, 0.04);
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+main .container .banner .leftside .btn2 button:hover {
+  background-color: rgba(197, 194, 194, 0.397);
+}
+main .container .banner .leftside span {
+  color: rgb(139, 135, 135);
+  margin-top: 20px;
+}
+main .container .rank {
+  margin-top: 30px;
+  display: flex;
+}
+main .container .rank .socialmedia {
+  width: 700px;
+  height: 150px;
+  border-right: 1px solid rgb(168, 164, 164);
+}
+main .container .rank .rate {
+  height: 120px;
+  border-right: 1px solid rgb(168, 164, 164);
+  padding: 20px 20px 20px;
+  font-size: large;
+}
+main .container .rank .rate .checked {
+  color: orange;
+}
+main .container .rank .rate .des {
+  color: rgb(139, 135, 135);
+  margin-top: 10px;
+}
+main .container .rank .trustpilot {
+  padding-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 150px;
+}
+main .container .rank .trustpilot a {
+  color: black;
+  text-decoration: none;
+}
+main .container .rank .trustpilot a .image img {
+  margin-bottom: 5px;
+  margin-left: 20px;
+  width: 150px;
+}
+main .container .rank .trustpilot a img {
+  margin-left: 20px;
+  width: 200px;
+}
+main .container .rank .trustpilot p {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+main .container .rank .trustpilot p b {
+  font-weight: bold;
+  line-height: 20px;
+}
+main .graybanner {
+  display: flex;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 600px;
+}
+main .graybanner .leftimage {
+  position: relative;
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 700px;
+  height: 400px;
+  top: 60px;
+  left: 60px;
+}
+main .graybanner .leftimage h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 65px;
+  padding-top: 30px;
+}
+main .graybanner .leftimage .colorfull {
+  display: flex;
+  margin-top: 25px;
+  margin-left: 35px;
+}
+main .graybanner .leftimage .colorfull img {
+  border-radius: 15px;
+  margin-left: 15px;
+}
+main .graybanner .leftimage .colorfull img:hover {
+  scale: 1.01;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 15px;
+  transition: 1s;
+}
+main .graybanner .right {
+  margin: 60px;
+  padding-left: 60px;
+}
+main .graybanner .right span {
+  font-size: 2rem;
+  color: rgb(139, 135, 135);
+  font-family: "Nanum Pen Script", sans-serif;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+main .graybanner .right h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 15px 0px;
+}
+main .graybanner .right p {
+  line-height: 30px;
+  font-size: 20px;
+  color: rgb(139, 135, 135);
+}
+main .graybanner .right button {
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+main .graybanner .right button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}
+main .test {
+  margin-top: 80px;
+}
+main .test .container {
+  display: flex;
+}
+main .test .container .testleft {
+  margin-top: 30px;
+  width: 600px;
+}
+main .test .container .testleft span {
+  font-size: 2rem;
+  color: rgb(139, 135, 135);
+  font-family: "Nanum Pen Script", sans-serif;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+main .test .container .testleft h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 15px 0px;
+}
+main .test .container .testleft p {
+  line-height: 30px;
+  font-size: 20px;
+  color: rgb(139, 135, 135);
+}
+main .test .container .testleft button {
+  font-weight: bold;
+  background-color: transparent;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+main .test .container .testleft button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
